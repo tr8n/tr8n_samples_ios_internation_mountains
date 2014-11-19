@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A334AC1E-3DB7-4945-876C-B2301B151A2F</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F3F94805F38BD43EBA3CF0364E4B7E7F8102E3A5</key>
+		<string>github.com:tr8n/tr8n_objc_clientsdk.git</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F3F94805F38BD43EBA3CF0364E4B7E7F8102E3A5</key>
+		<string>tr8n_objc_clientsdk/</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:tr8n/tr8n_objc_clientsdk.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F3F94805F38BD43EBA3CF0364E4B7E7F8102E3A5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F3F94805F38BD43EBA3CF0364E4B7E7F8102E3A5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>tr8n_objc_clientsdk</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,43 @@
+PODS:
+  - AFNetworking (2.5.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.5.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.0)
+  - AFNetworking/Security (2.5.0)
+  - AFNetworking/Serialization (2.5.0)
+  - AFNetworking/UIKit (2.5.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - MBProgressHUD (0.9)
+  - MPColorTools (1.6.1)
+  - Tr8n (0.1.11):
+    - AFNetworking (~> 2.4)
+    - MBProgressHUD (~> 0.9)
+    - MPColorTools (~> 1.6)
+
+DEPENDENCIES:
+  - Tr8n (from `git@github.com:tr8n/tr8n_objc_clientsdk.git`)
+
+EXTERNAL SOURCES:
+  Tr8n:
+    :git: git@github.com:tr8n/tr8n_objc_clientsdk.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
+  MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
+  MPColorTools: d59184c7ce8c28926f93d15565b1dce586376191
+  Tr8n: e1430b6c769008429a4f9b4545308d13d852b685
+
+COCOAPODS: 0.34.2

@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, "7.0"
+
+target "InternationalMountains" do
+    # pod "Tr8n", :path => "/Users/michael/Projects/Tr8n/tr8n_objc_clientsdk/Tr8n.podspec"
+    # pod "Tr8n", '~> 0.1.11'
+    pod 'Tr8n', :git=> 'git@github.com:tr8n/tr8n_objc_clientsdk.git'
+end
+
+

@@ -1,0 +1,5 @@
+#include "Pods-InternationalMountains-Tr8n.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/Tr8n" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/MBProgressHUD" "${PODS_ROOT}/Headers/Public/MPColorTools" "${PODS_ROOT}/Headers/Public/Tr8n"
+OTHER_LDFLAGS = -ObjC
+PODS_ROOT = ${SRCROOT}
