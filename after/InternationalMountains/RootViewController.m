@@ -48,10 +48,10 @@
 #import "RootViewController.h"
 #import "DetailViewController.h"
 
-#import "Tr8n.h"
-#import "Tr8nLanguageSelectorViewController.h"
-#import "Tr8nTranslatorViewController.h"
-#import "UIViewController+Tr8n.h"
+#import "Tml.h"
+#import "TmlLanguageSelectorViewController.h"
+#import "TmlTranslatorViewController.h"
+#import "UIViewController+Tml.h"
 
 /* key name for the application preference in our Settings.bundle */
 NSString *kSettingKey = @"sort";
@@ -77,8 +77,8 @@ NSInteger mountainSort(id m1, id m2, void *context) {
 	NSString *m2Name = @"";
 	if (m1 != nil && [m1 isKindOfClass:[NSDictionary class]] &&
 		m2 != nil && [m2 isKindOfClass:[NSDictionary class]]) {
-		m1Name = Tr8nLocalizedString(((NSDictionary *) m1)[kMountainNameString]);
-		m2Name = Tr8nLocalizedString(((NSDictionary *) m2)[kMountainNameString]);
+		m1Name = TmlLocalizedString(((NSDictionary *) m1)[kMountainNameString]);
+		m2Name = TmlLocalizedString(((NSDictionary *) m2)[kMountainNameString]);
 	}
 	return [m1Name localizedCompare:m2Name];
 }
@@ -88,17 +88,17 @@ NSInteger mountainSort(id m1, id m2, void *context) {
 @implementation RootViewController
 
 - (IBAction)changeLanguage:(id)sender {
-    [Tr8nLanguageSelectorViewController changeLanguageFromController:self];
+    [TmlLanguageSelectorViewController changeLanguageFromController:self];
 }
 
 - (IBAction)translate:(id)sender {
-    [Tr8nTranslatorViewController toggleInAppTranslationsFromController:self];
+    [TmlTranslatorViewController toggleInAppTranslationsFromController:self];
 }
 
 - (void) translationsLoaded {
-    self.navigationItem.title = Tr8nLocalizedString(@"Master");
-    self.navigationItem.leftBarButtonItem.title = Tr8nLocalizedString(@"Language");
-    self.navigationItem.rightBarButtonItem.title = Tr8nLocalizedString(@"Translator");
+    self.navigationItem.title = TmlLocalizedString(@"Master");
+    self.navigationItem.leftBarButtonItem.title = TmlLocalizedString(@"Language");
+    self.navigationItem.rightBarButtonItem.title = TmlLocalizedString(@"Translator");
     
     [self.tableView reloadData];
 }
@@ -120,7 +120,7 @@ NSInteger mountainSort(id m1, id m2, void *context) {
 
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(translationsLoaded)
-                                                 name:Tr8nTranslationsLoadedNotification
+                                                 name:TmlLanguageChangedNotification
                                                object:self.view.window];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -176,7 +176,7 @@ NSInteger mountainSort(id m1, id m2, void *context) {
      the localized mountain name from the bundle data using loadMountainsWithBundle */
 	NSDictionary *mountainDictionary = self.mountains[indexPath.row];
 
-    Tr8nLocalizeViewWithLabel(cell.textLabel, mountainDictionary[kMountainNameString]);
+    TmlLocalizeViewWithLabel(cell.textLabel, mountainDictionary[kMountainNameString]);
 
 //	cell.textLabel.text = mountainDictionary[kMountainNameString];
     return cell;

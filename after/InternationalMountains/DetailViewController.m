@@ -46,8 +46,8 @@
  */
 
 #import "DetailViewController.h"
-#import "Tr8n.h"
-#import "UIViewController+Tr8n.h"
+#import "Tml.h"
+#import "UIViewController+Tml.h"
 
 
 // key names for values in mountain dictionary entries
@@ -68,11 +68,11 @@ const NSString *kMountainClimbedDateString = @"climbedDate";
 @implementation DetailViewController
 
 - (void) translationsLoaded {
-    self.navigationItem.title = Tr8nLocalizedStringWithDescription(@"Detail", @"Details about the mountain");
+    self.navigationItem.title = TmlLocalizedStringWithDescription(@"Detail", @"Details about the mountain");
     [self updateLabelWithMountainName:self.mountainDictionary[kMountainNameString]
                                height:self.mountainDictionary[kMountainHeightString]
                           climbedDate:self.mountainDictionary[kMountainClimbedDateString]];
-    self.navigationItem.backBarButtonItem.title = Tr8nLocalizedStringWithDescription(@"Master", @"Main section of the app");
+    self.navigationItem.backBarButtonItem.title = TmlLocalizedStringWithDescription(@"Master", @"Main section of the app");
 }
 
 - (void)viewDidLoad {
@@ -85,7 +85,7 @@ const NSString *kMountainClimbedDateString = @"climbedDate";
 
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(translationsLoaded)
-                                                 name:Tr8nTranslationsLoadedNotification
+                                                 name:TmlLanguageChangedNotification
                                                object:self.view.window];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -144,7 +144,7 @@ const NSString *kMountainClimbedDateString = @"climbedDate";
     NSString *formattedHeight = [numberFormatter stringFromNumber: actualHeight];
     
     NSDictionary *tokens = @{
-                             @"mountain_name": Tr8nLocalizedString(name),
+                             @"mountain_name": TmlLocalizedString(name),
                              @"num": @[actualHeight, formattedHeight]
                              };
     
@@ -155,7 +155,7 @@ const NSString *kMountainClimbedDateString = @"climbedDate";
             sentence = @"{mountain_name} was first climbed on {date} and has a height of {num} feet";
         
         NSMutableDictionary *newTokens = [NSMutableDictionary dictionaryWithDictionary:tokens];
-        NSString *date = Tr8nLocalizedDateWithFormat(climbedDate, @"MMMM d, yyyy");
+        NSString *date = TmlLocalizedDateWithFormat(climbedDate, @"MMMM d, yyyy");
         [newTokens setObject:date forKey:@"date"];
         tokens = newTokens;
 	} else {
@@ -165,7 +165,7 @@ const NSString *kMountainClimbedDateString = @"climbedDate";
             sentence = @"{mountain_name} has a height of {num} feet";
 	}
     
-    Tr8nLocalizeViewWithLabelAndTokens(self.mountainDetails, sentence, tokens);
+    TmlLocalizeViewWithLabelAndTokens(self.mountainDetails, sentence, tokens);
     
 	/* Note that the mountainDetails UILabel is defined in Interface Builder as
 	 a multi-line UILabel.  This was done by setting the "Layout, # Lines" setting

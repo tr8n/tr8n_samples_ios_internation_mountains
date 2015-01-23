@@ -9,7 +9,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../tr8n_objc_clientsdk/Classes/UIViewController+Tr8n.m"
+            filePath = "../../tr8n_objc_clientsdk/Classes/UIViewController+Tml.m"
             timestampString = "437694699.670924"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"

@@ -46,18 +46,12 @@
  */
 
 #import "AppDelegate.h"
-#import "Tr8n.h"
+#import "Tml.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [Tr8n initWithKey: @"9141ef6531b63b4e86b81e0a2fe22f9dc8cee8fcdbc0c082f94bc8baaa98bff5"
-               secret: @"2e2f5f22bfe1578440a1e4676eca199c9b5e2a633497da2e472d33379392b7a8"];
-
-//    [Tr8n initWithKey: @"2ac5d23a81cc36830deecfa33bf5243cf3d1d6153bfdac38447091567dd98597"
-//               secret: @"7b2632e84e1c54b79f3502c1eca8e43f6e44362d22b86539880fb6d63784710d"
-//                 host: @"http://localhost:3000"];
-    
+    [Tml sharedInstanceWithToken:@"247a8ee71d60520ebccb38cb53a79a150de4f1c10ac36e781316fb8b3b44f078"];
     return YES;
 }
 

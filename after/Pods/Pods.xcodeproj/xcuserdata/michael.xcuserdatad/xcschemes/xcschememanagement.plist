@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-InternationalMountains-AFNetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-InternationalMountains-MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,7 +14,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-InternationalMountains-Tr8n.xcscheme</key>
+		<key>Pods-InternationalMountains-Tml.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>100E606A721048A66738E56A</key>
+		<key>419D11F0F414518F1D4A1C61</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>23EE7209A0B4031B3F2548C5</key>
+		<key>599FA826189493B023068868</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>264B39B578DA2B0679A7BD66</key>
+		<key>60613E56FBF5E1547C2B0D80</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>416E4FA7BE68F3E4BA7D40A5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B8FE8B97F2ECB58F3BD1E503</key>
+		<key>A2AE7844F8742B4A68D7685B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

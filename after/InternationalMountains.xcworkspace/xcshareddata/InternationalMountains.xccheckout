@@ -6,31 +6,35 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>A334AC1E-3DB7-4945-876C-B2301B151A2F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>InternationalMountains</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F3F94805F38BD43EBA3CF0364E4B7E7F8102E3A5</key>
-		<string>github.com:tr8n/tr8n_objc_clientsdk.git</string>
+		<key>4AB08C6D388E177D505EA6C97242A488A26E39FA</key>
+		<string>github.com:translationexchange/tml-objc-samples-internation-mountains.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>after/InternationalMountains.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F3F94805F38BD43EBA3CF0364E4B7E7F8102E3A5</key>
-		<string>tr8n_objc_clientsdk/</string>
+		<key>4AB08C6D388E177D505EA6C97242A488A26E39FA</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:tr8n/tr8n_objc_clientsdk.git</string>
+	<string>github.com:translationexchange/tml-objc-samples-internation-mountains.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F3F94805F38BD43EBA3CF0364E4B7E7F8102E3A5</string>
+	<string>4AB08C6D388E177D505EA6C97242A488A26E39FA</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F3F94805F38BD43EBA3CF0364E4B7E7F8102E3A5</string>
+			<string>4AB08C6D388E177D505EA6C97242A488A26E39FA</string>
 			<key>IDESourceControlWCCName</key>
-			<string>tr8n_objc_clientsdk</string>
+			<string>tml-objc-samples-internation-mountains</string>
 		</dict>
 	</array>
 </dict>

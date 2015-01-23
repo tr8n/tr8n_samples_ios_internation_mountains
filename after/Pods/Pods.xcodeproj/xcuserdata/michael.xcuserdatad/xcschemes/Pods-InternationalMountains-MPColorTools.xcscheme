@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "264B39B578DA2B0679A7BD66"
+               BlueprintIdentifier = "599FA826189493B023068868"
                BuildableName = "libPods-InternationalMountains-MPColorTools.a"
                BlueprintName = "Pods-InternationalMountains-MPColorTools"
                ReferencedContainer = "container:Pods.xcodeproj">
